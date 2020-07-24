@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elo</title>
+</head>
+<body>
+    <h1>Elo elo elo!</h1>
+    <h2>Leaderboard</h2>
+    <table>
+        {% for entry in entries %}
+    <TR>
+        <TD class="c1"><strong>{{ forloop.counter }}</strong>:</TD>
+        <TD class="c2">{{ entry.name }} -</TD>
+        <TD class="c3">{{ entry.elo }}</TD>
+    </TR>
+{% endfor %}
+</table>
+</body>
+</html>
