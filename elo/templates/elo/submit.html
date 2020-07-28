@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit elo</title>
+</head>
+<body>
+    <h1>Submit</h1>
+    <form method="post" action="submit">
+        {% csrf_token %}
+        {{ form.as_p }}<p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+</html>

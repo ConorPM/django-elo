@@ -1,0 +1,3 @@
+[submodule "elo/python_elo"]
+	path = elo/python_elo
+	url = https://github.com/ConorPM/python-elo.git
